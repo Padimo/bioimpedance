@@ -1,21 +1,41 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,9.0.3*%
-%TF.CreationDate,2025-08-18T17:13:02-04:00*%
+%TF.CreationDate,2025-08-20T09:06:48-04:00*%
 %TF.ProjectId,bioimpedance,62696f69-6d70-4656-9461-6e63652e6b69,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Bot*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 9.0.3) date 2025-08-18 17:13:02*
+G04 Created by KiCad (PCBNEW 9.0.3) date 2025-08-20 09:06:48*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
+G04 Aperture macros list*
+%AMRoundRect*
+0 Rectangle with rounded corners*
+0 $1 Rounding radius*
+0 $2 $3 $4 $5 $6 $7 $8 $9 X,Y pos of 4 corners*
+0 Add a 4 corners polygon primitive as box body*
+4,1,4,$2,$3,$4,$5,$6,$7,$8,$9,$2,$3,0*
+0 Add four circle primitives for the rounded corners*
+1,1,$1+$1,$2,$3*
+1,1,$1+$1,$4,$5*
+1,1,$1+$1,$6,$7*
+1,1,$1+$1,$8,$9*
+0 Add four rect primitives between the rounded corners*
+20,1,$1+$1,$2,$3,$4,$5,0*
+20,1,$1+$1,$4,$5,$6,$7,0*
+20,1,$1+$1,$6,$7,$8,$9,0*
+20,1,$1+$1,$8,$9,$2,$3,0*%
+G04 Aperture macros list end*
 %ADD10R,1.700000X1.700000*%
 %ADD11C,1.700000*%
 %ADD12C,0.700000*%
 %ADD13O,0.900000X2.400000*%
 %ADD14O,0.900000X1.700000*%
+%ADD15RoundRect,0.250000X-0.250000X-0.475000X0.250000X-0.475000X0.250000X0.475000X-0.250000X0.475000X0*%
+%ADD16RoundRect,0.250000X-0.475000X0.250000X-0.475000X-0.250000X0.475000X-0.250000X0.475000X0.250000X0*%
 G04 APERTURE END LIST*
 D10*
 %TO.C,J8*%
@@ -86,11 +106,26 @@ X118000000Y-98335000D03*
 %TD*%
 D10*
 %TO.C,J1*%
-X101490000Y-78660000D03*
+X121528000Y-62948000D03*
 D11*
-X101490000Y-76120000D03*
-X101490000Y-73580000D03*
-X101490000Y-71040000D03*
-X101490000Y-68500000D03*
+X121528000Y-65488000D03*
+X121528000Y-68028000D03*
+X121528000Y-70568000D03*
+X121528000Y-73108000D03*
+%TD*%
+D15*
+%TO.C,C22*%
+X108235000Y-71250000D03*
+X110135000Y-71250000D03*
+%TD*%
+D16*
+%TO.C,C1*%
+X109685000Y-74300000D03*
+X109685000Y-76200000D03*
+%TD*%
+D15*
+%TO.C,C4*%
+X108235000Y-69250000D03*
+X110135000Y-69250000D03*
 %TD*%
 M02*
